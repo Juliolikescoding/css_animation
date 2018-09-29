@@ -13,12 +13,35 @@ body {
   position: fixed;
   left: 0;
   right: 0;
-  top: 0;
+  top: -80px;
   bottom: 0;
   margin: auto;
-  background: url('../images/crazy_boy.png') 0 0 no-repeat;
-  width: 71px;
-  height: 80px;
+  background: url('../images/skateboard.png') 0 0 no-repeat;
+  width: 80px;
+  height: 155px;
   background-size: 216px 240px;
-  transition: margin-bottom 1s ease;
+  transition: top 1s ease;
 }
+
+.animate{
+  animation: move 1s steps(3) infinite;
+}
+
+@keyframes move{
+  from{
+background-position-x: 0;
+  }
+  to{
+background-position-x: -216px;
+  }
+}
+
+@keyframes jump {
+  from{
+    background-position-y: 0;
+  }
+  to {
+background-position-y: -240px;
+  }
+}
+
